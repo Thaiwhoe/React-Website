@@ -1,0 +1,51 @@
+.App {
+    text-align: center;
+}
+
+
+nav {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   min-height: 8vh;
+   background: rgb(46, 42, 42);
+   color: white;
+   padding: 5px 20px;
+   font-size: 25px;
+   font-family: "Roboto", sans-serif;
+}
+
+.nav-links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    list-style: none;
+    float: right;
+    color: white;
+}
+
+.nav-links li {
+    display: inline-flex;
+}
+
+.nav-links li.active a {
+    border: 1px solid rgb(247, 247, 247);
+}
+
+.nav-links li a:hover {
+    border: 1px solid white;
+    text-decoration: none;
+}
+
+.logo {
+    float: left;
+    justify-content: space-around;
+    width: 150px;
+    height: auto;
+    margin-bottom: 0px;
+}
+
+.links {
+    color: white;
+}
