@@ -16,7 +16,7 @@ class Login extends Component {
         return (
             <Modal
             {...this.props}
-            size="md"
+            size="sm"
             aria-labelledby="contained-modal-title-vcenter"
             centered
             >
@@ -27,62 +27,59 @@ class Login extends Component {
                 </Modal.Header>
                 <Modal.Body>
                        
-                        <div className="main">
-                            <div className='logo'>
-                                <img src={logo} alt='foodie_logo' />
-                            </div>
-                        </div>
-                            <h2 className="welcome">Login</h2>
-                                <form>
-                                    <div className="input-group input-group-sm mb-3">
-                                        <div className="input-group-prepend">
-                                            <span className="input-group-text" id="inputGroup-sizing-sm">E-mail</span>
-                                        </div>
-
-                                        <input type="text" placeholder='Email' className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                    <div className="main">
+                        <h2 className="welcome">Login</h2>
+                            <form>
+                                <div className="input-group input-group-sm mb-3">
+                                    <div className="input-group-prepend">
+                                        <span className="input-group-text" id="inputGroup-sizing-sm">E-mail</span>
                                     </div>
 
-                                        <div className="input-group input-group-sm mb-3">
-                                            <div className="input-group-prepend">
-                                                <span className="input-group-text" id="inputGroup-sizing-sm">Password</span>
-                                            </div>
-                                            <input type="password" placeholder='Password' className="form-control" 
-                                                aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                                    <input type="text" placeholder='Email' className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                                </div>
+
+                                    <div className="input-group input-group-sm mb-3">
+                                        <div className="input-group-prepend">
+                                            <span className="input-group-text" id="inputGroup-sizing-sm">Password</span>
                                         </div>
-                                        
-                                            <div className="form-check">
-                                                <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                                <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
-                                            </div>
+                                        <input type="password" placeholder='Password' className="form-control" 
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                                    </div>
                                     
-                                        
-                                        
-                                        <button type='submit' className='btn btn-primary btn-block'>Login</button>
+                                        <div className="form-check">
+                                            <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                                            <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
+                                        </div>
+                                
+                                    
+                                    
+                                    <button type='submit' className='btn btn-primary btn-block'>Login</button>
+                                    <br/>
+                                    <h5>Don't have an account yet? 
                                         <br/>
-                                        <h5>Don't have an account yet? 
-                                            <br/>
-                                            <div className="butt">
-                                                <ButtonToolbar>
-                                                    <Button className='btn btn-info btn-sm'
-                                                        onClick={() => this.setState({addModalShow: true})}>
-                                                        Sign up 
-                                                    </Button>
+                                        <div className="butt">
+                                            <ButtonToolbar>
+                                                <Button className='btn btn-info btn-sm'
+                                                    onClick={() => this.setState({addModalShow: true})}>
+                                                    Sign up 
+                                                </Button>
 
 
-                                                    <Register 
-                                                    show={this.state.addModalShow}
-                                                    onHide={addModalClose} />
-                                                </ButtonToolbar>
-                                            </div>
+                                                <Register 
+                                                show={this.state.addModalShow}
+                                                onHide={addModalClose} />
+                                            </ButtonToolbar>
+                                        </div>
 
-                                        </h5>
-                                </form>
+                                    </h5>
+                            </form>
+                    </div>
                     
-            </Modal.Body> 
-            <Modal.Footer>
-                    <button class="btn btn-primary btn-sm" onClick={this.props.onHide}>close</button>
-                </Modal.Footer>
-        </Modal>
+                </Modal.Body> 
+                    <Modal.Footer>
+                        <button class="btn btn-primary btn-sm" onClick={this.props.onHide}>close</button>
+                    </Modal.Footer>
+            </Modal>
         );
         
     }
