@@ -48,7 +48,7 @@ class Homepage extends React.Component {
 
                         <Register 
                         show={this.state.addModalShow}
-                        onHide={addSecondModalClose} />
+                        onHide={addModalClose} />
                     </ButtonToolbar>
                 
                     <ButtonToolbar>
