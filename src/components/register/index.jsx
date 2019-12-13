@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './register.css'
 import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
 
-export class Register extends Component {
+class Register extends React.Component {
     constructor(props){
         super(props);
     }
@@ -91,4 +91,4 @@ export class Register extends Component {
 }
 
 
-//export default Register;
+export default Register;
